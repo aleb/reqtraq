@@ -75,7 +75,7 @@ The RMT SHALL allow tracking of requirements within the following document types
 - Software/Hardware Design Documents, which contain <abbr title="Low-Level Requirements">LLR</abbr>.
 
 ###### Attributes:
-- Rationale: These documents contain the three levels of requirements, at varying levels of product development, that reqtraq parses to establish traceability.
+- Rationale: These documents contain the three levels of requirements, at varying levels of product development, that Reqtraq parses to establish traceability.
 - Verification: Test.
 - Safety impact: None.
 - Type: SW

@@ -342,7 +342,7 @@ The report generation described in REQ-TRAQ-SWL-6 will be able to receive the fo
 
 - two git commit IDs (or git refs): in this case the report will contain all requirements that were changed between the given commits. If the 2nd commit id is missing, the current state of the repository is used.
 
-Suggested usage (the directory in which reqtraq is run determines the project for which the report is generated):
+Suggested usage (the directory in which Reqtraq is run determines the project for which the report is generated):
 
 ```
 reqtraq report 
@@ -359,28 +359,7 @@ Note: a requirement is considered "changed" if either it was directly edited or 
 - Safety impact: None.
 
 
-##### REQ-TRAQ-SWL-18 Phabricator export
-
-The RMT SHALL be able to export all requirements as Phabricator tasks, in the following format:
-
-- Title: requirement title, e.g. "REQ-TRAQ-SWL-18 Phabricator export"
-- Assigned To: empty
-- Status: Open
-- Priority: Normal
-- Description: The requirement description
-- Tags: Project code (e.g. TRAQ in this case)
-- Subscribers: empty
-- Parents\: the parent requirements
-- Children: the child requirements
-
-If a task with the given requirement ID already exists, then the RMT SHALL update the title, description and parents of the task, but all other fields will be left unchanged.
-
-If the requirement is marked as deleted, as described in REQ-TRAQ-SWL-17, the associated task and all its subtasks SHALL be marked as WONTFIX.
-
-###### Attributes:
-- Parents: REQ-TRAQ-SWH-6
-- Verification: Test
-- Safety impact: None
+##### REQ-TRAQ-SWL-18 DELETED
 
 
 ##### REQ-TRAQ-SWL-9. Change history tracing
@@ -408,7 +387,7 @@ reqtraq report --format html
 ```
 
 ###### Attributes:
-- Rationale: reports on the bidirectional traceability have to be submitted as evidence in certification trajectories. The report generated in REQ-TRAQ-SWL-6 addresses this issue.
+- Rationale: Reports on the bidirectional traceability have to be submitted as evidence in certification trajectories. The report generated in REQ-TRAQ-SWL-6 addresses this issue.
 - Parents: REQ-TRAQ-SWH-9
 - Verification: Demonstration.
 - Safety impact: None
